@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-60 -80 760 760">
+  <rect x="-60" y="-80" width="760" height="760" rx="140" fill="#111"/>
+  <defs>
+    <linearGradient id="g-swoosh" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#F59E0B"/>
+      <stop offset=".55" stop-color="#FFC107"/>
+      <stop offset="1" stop-color="#FFD54F"/>
+    </linearGradient>
+    <linearGradient id="g-bld" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFD54F"/>
+      <stop offset="1" stop-color="#F0A500"/>
+    </linearGradient>
+    <linearGradient id="g-white" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#D9D9D9"/>
+    </linearGradient>
+    <!-- cut a gap in the A where the swoosh passes -->
+    <mask id="m-gap">
+      <rect width="640" height="580" fill="#fff"/>
+      <path d="M20 575C150 400 360 300 610 268C440 320 260 430 110 575Z" fill="#000" stroke="#000" stroke-width="34" stroke-linejoin="round"/>
+    </mask>
+    <!-- buildings only show above the swoosh's lower edge -->
+    <clipPath id="c-above">
+      <path d="M0 0H640V268H610C440 320 260 430 110 575H0Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- white A (no crossbar, tapered left leg) -->
+  <path mask="url(#m-gap)" fill="url(#g-white)"
+        d="M6 556 282 32Q320 2 358 32L634 556H522L334 96H306L52 556Z"/>
+
+  <!-- rising buildings / growth arrow -->
+  <g clip-path="url(#c-above)" stroke="#0d0d0d" stroke-width="10" stroke-linejoin="round" paint-order="stroke">
+    <path d="M344 214 368 204 388 212V480H344Z" fill="url(#g-bld)"/>
+    <path d="M232 236 262 222 284 232V480H232Z" fill="url(#g-bld)"/>
+    <path d="M290 190H276L318 112 360 190H342V480H290Z" fill="url(#g-bld)"/>
+    <path d="M300 200V470M246 246V470M356 226V470" stroke="#B07D00" stroke-width="6" fill="none" paint-order="normal"/>
+  </g>
+
+  <!-- swoosh -->
+  <path d="M20 575C150 400 360 300 610 268C440 320 260 430 110 575Z" fill="url(#g-swoosh)"/>
+
+  <!-- window -->
+  <g fill="#fff">
+    <rect x="288" y="462" width="38" height="38" rx="3"/>
+    <rect x="334" y="462" width="38" height="38" rx="3"/>
+    <rect x="288" y="508" width="38" height="38" rx="3"/>
+    <rect x="334" y="508" width="38" height="38" rx="3"/>
+  </g>
+</svg>

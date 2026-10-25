@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ananta Constructions & Developers | Roads, Industrial, Buildings, JCB & Poclain on Rent – Pune</title>
+  <meta name="description" content="Ananta Constructions & Developers, Koregaon Bhima, Pune. Road construction, industrial projects, residential & commercial buildings, and JCB, Poclain (excavator) &amp; earthmoving machinery on rent." />
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&family=Inter:wght@400;500;600&family=Kaushan+Script&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Logo sprite (defined once, reused via <use>) -->
+  <svg width="0" height="0" style="position:absolute;overflow:hidden" aria-hidden="true">
+    <defs>
+      <linearGradient id="g-swoosh" x1="0" y1="1" x2="1" y2="0">
+        <stop offset="0" stop-color="#F59E0B"/>
+        <stop offset=".55" stop-color="#FFC107"/>
+        <stop offset="1" stop-color="#FFD54F"/>
+      </linearGradient>
+      <linearGradient id="g-bld" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#FFD54F"/>
+        <stop offset="1" stop-color="#F0A500"/>
+      </linearGradient>
+      <linearGradient id="g-white" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#FFFFFF"/>
+        <stop offset="1" stop-color="#D9D9D9"/>
+      </linearGradient>
+      <!-- cut a gap in the A where the swoosh passes -->
+      <mask id="m-gap">
+        <rect width="640" height="580" fill="#fff"/>
+        <path d="M20 575C150 400 360 300 610 268C440 320 260 430 110 575Z" fill="#000" stroke="#000" stroke-width="34" stroke-linejoin="round"/>
+      </mask>
+      <!-- buildings only show above the swoosh's lower edge -->
+      <clipPath id="c-above">
+        <path d="M0 0H640V268H610C440 320 260 430 110 575H0Z"/>
+      </clipPath>
+    </defs>
+    <symbol id="ananta-mark" viewBox="0 0 640 580">
+      <!-- white A (no crossbar, tapered left leg) -->
+      <path mask="url(#m-gap)" fill="url(#g-white)"
+            d="M6 556 282 32Q320 2 358 32L634 556H522L334 96H306L52 556Z"/>
+    
+      <!-- rising buildings / growth arrow -->
+      <g clip-path="url(#c-above)" stroke="#0d0d0d" stroke-width="10" stroke-linejoin="round" paint-order="stroke">
+        <path d="M344 214 368 204 388 212V480H344Z" fill="url(#g-bld)"/>
+        <path d="M232 236 262 222 284 232V480H232Z" fill="url(#g-bld)"/>
+        <path d="M290 190H276L318 112 360 190H342V480H290Z" fill="url(#g-bld)"/>
+        <path d="M300 200V470M246 246V470M356 226V470" stroke="#B07D00" stroke-width="6" fill="none" paint-order="normal"/>
+      </g>
+    
+      <!-- swoosh -->
+      <path d="M20 575C150 400 360 300 610 268C440 320 260 430 110 575Z" fill="url(#g-swoosh)"/>
+    
+      <!-- window -->
+      <g fill="#fff">
+        <rect x="288" y="462" width="38" height="38" rx="3"/>
+        <rect x="334" y="462" width="38" height="38" rx="3"/>
+        <rect x="288" y="508" width="38" height="38" rx="3"/>
+        <rect x="334" y="508" width="38" height="38" rx="3"/>
+      </g>
+    </symbol>
+  </svg>
+
+  <!-- ========== PRELOADER ========== -->
+  <div id="preloader">
+    <div class="loader-logo">
+      <svg class="logo-mark" viewBox="0 0 640 580" role="img" aria-label="Ananta logo"><use href="#ananta-mark"/></svg>
+      <div class="loader-bar"><span></span></div>
+    </div>
+  </div>
+
+  <!-- ========== TOP BAR ========== -->
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <div class="topbar-left">
+        <span><i class="fa-solid fa-location-dot"></i> Koregaon Bhima, Pune, Maharashtra</span>
+        <span class="hide-sm"><i class="fa-regular fa-clock"></i> Mon – Sat: 8:00 AM – 8:00 PM</span>
+      </div>
+      <div class="topbar-right">
+        <a href="tel:+919112984379"><i class="fa-solid fa-phone"></i> +91 91129 84379</a>
+        <span class="hide-sm social">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://wa.me/919112984379" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== NAVBAR ========== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="brand">
+        <svg class="logo-mark" viewBox="0 0 640 580" role="img" aria-label="Ananta logo"><use href="#ananta-mark"/></svg>
+        <div class="brand-text">
+          <strong aria-label="Ananta">AN<svg class="a-peak" viewBox="0 0 86 100" aria-hidden="true"><path d="M0 100 28 0H58L86 100H59L43 42 27 100Z" fill="currentColor"/><path d="M43 64 31 100H43Z" fill="#FFD54F"/><path d="M43 64V100H55Z" fill="#E09B00"/></svg><span class="sr-only">A</span>NTA</strong>
+          <small>Constructions &amp; Developers</small>
+        </div>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#rental">Machinery Rental</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <a href="#rental-form" class="btn btn-primary nav-cta-mobile">Book Machine</a>
+      </nav>
+
+      <a href="#rental-form" class="btn btn-primary nav-cta"><i class="fa-solid fa-truck-monster"></i> Book Machine</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="home">
+    <div class="hero-slides">
+      <div class="hero-slide active" style="--img:url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1920&q=80')"></div>
+      <div class="hero-slide" style="--img:url('https://images.unsplash.com/photo-1429497419816-9ca5cfb4571a?auto=format&fit=crop&w=1920&q=80')"></div>
+      <div class="hero-slide" style="--img:url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1920&q=80')"></div>
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hazard-stripes hero-stripes"></div>
+
+    <div class="container hero-content">
+      <div class="hero-text">
+        <span class="eyebrow reveal"><span class="dot"></span> Trusted builders in Pune region</span>
+        <h1 class="reveal">
+          Building <span class="hl">Today</span><br />
+          For a Better <span class="outline">Tomorrow</span>
+        </h1>
+        <p class="hero-sub reveal">
+          Roads, industrial sheds, residential &amp; commercial buildings, and a ready fleet of
+          <strong>JCB &amp; Poclain machines on rent</strong>, delivered on time with quality you can see.
+        </p>
+        <div class="hero-btns reveal">
+          <a href="#services" class="btn btn-primary btn-lg">Explore Our Work <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="#rental" class="btn btn-ghost btn-lg"><i class="fa-solid fa-truck-monster"></i> JCB &amp; Poclain On Rent</a>
+        </div>
+        <div class="hero-trust reveal">
+          <div class="avatars">
+            <span>RK</span><span>SP</span><span>AM</span><span><i class="fa-solid fa-plus"></i></span>
+          </div>
+          <div>
+            <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+            <small>Trusted by 250+ clients across Pune district</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-card reveal">
+        <div class="hero-card-head">
+          <span class="live"><span></span> Available Now</span>
+          <div class="machine-tabs" id="machineTabs">
+            <button class="active" data-pane="jcb">JCB</button>
+            <button data-pane="poclain">POCLAIN</button>
+          </div>
+        </div>
+        <div class="machine-pane active" data-pane="jcb">
+          <h3><span class="jcb-badge">JCB</span> ON RENT</h3>
+          <ul>
+            <li><i class="fa-solid fa-check"></i> Earthwork &amp; Excavation</li>
+            <li><i class="fa-solid fa-check"></i> Land Leveling</li>
+            <li><i class="fa-solid fa-check"></i> Trenching Work</li>
+            <li><i class="fa-solid fa-check"></i> Site Development</li>
+          </ul>
+        </div>
+        <div class="machine-pane" data-pane="poclain">
+          <h3><span class="jcb-badge poc">POCLAIN</span> ON RENT</h3>
+          <ul>
+            <li><i class="fa-solid fa-check"></i> Heavy Excavation &amp; Foundations</li>
+            <li><i class="fa-solid fa-check"></i> Farm Ponds (Shet Tale) &amp; Wells</li>
+            <li><i class="fa-solid fa-check"></i> Nala / Canal Deepening</li>
+            <li><i class="fa-solid fa-check"></i> Rock Breaking (Breaker)</li>
+          </ul>
+        </div>
+        <a href="tel:+919112984379" class="hero-call">
+          <i class="fa-solid fa-phone-volume"></i>
+          <div><small>Call for booking</small><strong>91129 84379</strong></div>
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-dots" id="heroDots">
+      <button class="active" aria-label="Slide 1"></button>
+      <button aria-label="Slide 2"></button>
+      <button aria-label="Slide 3"></button>
+    </div>
+    <a href="#about" class="scroll-down" aria-label="Scroll down"><span></span></a>
+  </section>
+
+  <!-- ========== MARQUEE ========== -->
+  <div class="marquee">
+    <div class="marquee-track">
+      <span>Road Construction</span><i class="fa-solid fa-asterisk"></i>
+      <span>Industrial Projects</span><i class="fa-solid fa-asterisk"></i>
+      <span>Residential Buildings</span><i class="fa-solid fa-asterisk"></i>
+      <span>Commercial Complexes</span><i class="fa-solid fa-asterisk"></i>
+      <span>JCB On Rent</span><i class="fa-solid fa-asterisk"></i>
+      <span>Poclain On Rent</span><i class="fa-solid fa-asterisk"></i>
+      <span>Earthwork &amp; Excavation</span><i class="fa-solid fa-asterisk"></i>
+      <span>Site Development</span><i class="fa-solid fa-asterisk"></i>
+      <span>Road Construction</span><i class="fa-solid fa-asterisk"></i>
+      <span>Industrial Projects</span><i class="fa-solid fa-asterisk"></i>
+      <span>Residential Buildings</span><i class="fa-solid fa-asterisk"></i>
+      <span>Commercial Complexes</span><i class="fa-solid fa-asterisk"></i>
+      <span>JCB On Rent</span><i class="fa-solid fa-asterisk"></i>
+      <span>Poclain On Rent</span><i class="fa-solid fa-asterisk"></i>
+      <span>Earthwork &amp; Excavation</span><i class="fa-solid fa-asterisk"></i>
+      <span>Site Development</span><i class="fa-solid fa-asterisk"></i>
+    </div>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <section class="section about" id="about">
+    <div class="container about-grid">
+      <div class="about-media reveal">
+        <div class="about-img main" style="--img:url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=900&q=80')"></div>
+        <div class="about-img small" style="--img:url('https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=600&q=80')"></div>
+        <div class="exp-badge">
+          <strong><span class="counter" data-target="15">0</span>+</strong>
+          <span>Years of<br />Experience</span>
+        </div>
+        <div class="hazard-stripes about-stripes"></div>
+      </div>
+
+      <div class="about-text">
+        <span class="section-tag reveal">About Ananta</span>
+        <h2 class="section-title reveal">We Build Infrastructure That <span class="hl">Grows</span> With You</h2>
+        <p class="reveal">
+          <strong>Ananta Constructions &amp; Developers</strong> is a Pune-based construction company headquartered in
+          Koregaon Bhima. From village roads and MIDC industrial sheds to modern residential and commercial buildings,
+          we take projects from first excavation to final handover.
+        </p>
+        <p class="reveal">
+          With our own fleet of JCBs, Poclain excavators and earthmoving equipment, we never wait on third parties. That means
+          faster mobilisation, better cost control and on-time completion for every client.
+        </p>
+
+        <div class="about-features">
+          <div class="af reveal"><i class="fa-solid fa-helmet-safety"></i><div><h4>Safety First</h4><p>Trained crew &amp; strict on-site safety norms.</p></div></div>
+          <div class="af reveal"><i class="fa-solid fa-medal"></i><div><h4>Quality Material</h4><p>Certified material, tested at every stage.</p></div></div>
+          <div class="af reveal"><i class="fa-solid fa-truck-monster"></i><div><h4>Own Machinery</h4><p>In-house fleet for zero delays.</p></div></div>
+          <div class="af reveal"><i class="fa-solid fa-stopwatch"></i><div><h4>On-Time Delivery</h4><p>Clear timelines, honest updates.</p></div></div>
+        </div>
+
+        <div class="about-sign reveal">
+          <div class="quote">"Your Growth, Our Priority"</div>
+          <a href="#contact" class="btn btn-dark">Get a Free Quote <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SERVICES ========== -->
+  <section class="section services" id="services">
+    <div class="container">
+      <div class="section-head center">
+        <span class="section-tag reveal">What We Do</span>
+        <h2 class="section-title reveal">Complete Construction Solutions <br />Under One Roof</h2>
+        <p class="section-sub reveal">From ground-breaking to handover: roads, industries, buildings and heavy machinery support.</p>
+      </div>
+
+      <div class="services-grid">
+        <article class="service-card reveal">
+          <div class="sc-img" style="--img:url('https://images.unsplash.com/photo-1517089596392-fb9a9033e05b?auto=format&fit=crop&w=800&q=80')"></div>
+          <div class="sc-body">
+            <div class="sc-icon"><i class="fa-solid fa-road"></i></div>
+            <span class="sc-num">01</span>
+            <h3>Road Construction</h3>
+            <p>Concrete (RCC) roads, bituminous / asphalt roads, village &amp; internal roads, culverts and drainage.</p>
+            <ul><li>CC &amp; Asphalt Roads</li><li>Grading &amp; Compaction</li><li>Drainage &amp; Culverts</li></ul>
+            <a href="#contact" class="sc-link">Enquire Now <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <article class="service-card reveal">
+          <div class="sc-img" style="--img:url('https://images.unsplash.com/photo-1513828583688-c52646db42da?auto=format&fit=crop&w=800&q=80')"></div>
+          <div class="sc-body">
+            <div class="sc-icon"><i class="fa-solid fa-industry"></i></div>
+            <span class="sc-num">02</span>
+            <h3>Industrial Construction</h3>
+            <p>PEB &amp; RCC industrial sheds, warehouses, factory buildings and MIDC infrastructure works.</p>
+            <ul><li>Warehouses &amp; Sheds</li><li>Factory Buildings</li><li>Industrial Flooring</li></ul>
+            <a href="#contact" class="sc-link">Enquire Now <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <article class="service-card reveal">
+          <div class="sc-img" style="--img:url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80')"></div>
+          <div class="sc-body">
+            <div class="sc-icon"><i class="fa-solid fa-building"></i></div>
+            <span class="sc-num">03</span>
+            <h3>Buildings &amp; Development</h3>
+            <p>Residential bungalows, apartments, commercial complexes and turnkey development projects.</p>
+            <ul><li>Residential Projects</li><li>Commercial Complexes</li><li>Turnkey Contracts</li></ul>
+            <a href="#contact" class="sc-link">Enquire Now <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <article class="service-card featured reveal">
+          <div class="sc-img" style="--img:url('https://images.unsplash.com/photo-1580901368919-7738efb0f87e?auto=format&fit=crop&w=800&q=80')"></div>
+          <div class="sc-body">
+            <div class="sc-icon"><i class="fa-solid fa-truck-monster"></i></div>
+            <span class="sc-num">04</span>
+            <h3>Machinery On Rent</h3>
+            <p>JCB backhoe loaders, Poclain excavators, tippers, rollers and more, with experienced operators.</p>
+            <ul><li>Hourly / Daily / Monthly</li><li>Skilled Operators</li><li>Quick Mobilisation</li></ul>
+            <a href="#rental" class="sc-link">View Fleet <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== STATS ========== -->
+  <section class="stats">
+    <div class="hazard-stripes stats-stripes"></div>
+    <div class="container stats-grid">
+      <div class="stat reveal"><i class="fa-solid fa-trophy"></i><strong><span class="counter" data-target="350">0</span>+</strong><span>Projects Completed</span></div>
+      <div class="stat reveal"><i class="fa-solid fa-road"></i><strong><span class="counter" data-target="120">0</span>+ km</strong><span>Roads Built</span></div>
+      <div class="stat reveal"><i class="fa-solid fa-truck-monster"></i><strong><span class="counter" data-target="25">0</span>+</strong><span>Machines in Fleet</span></div>
+      <div class="stat reveal"><i class="fa-solid fa-face-smile"></i><strong><span class="counter" data-target="250">0</span>+</strong><span>Happy Clients</span></div>
+    </div>
+  </section>
+
+  <!-- ========== RENTAL ========== -->
+  <section class="section rental" id="rental">
+    <div class="container">
+      <div class="rental-hero">
+        <div class="rental-hero-text">
+          <span class="section-tag light reveal">Machinery Rental</span>
+          <h2 class="reveal"><span class="jcb-badge big">JCB</span> <em>&amp;</em> <span class="jcb-badge big poc">POCLAIN</span> <em>ON RENT</em></h2>
+          <div class="rental-pills reveal">
+            <span>Powerful Machines</span><span>Reliable Service</span><span>On Time Work</span>
+          </div>
+          <p class="reveal">Well-maintained JCBs, Poclains and heavy equipment with trained operators, available at short notice for
+            sites across Pune, Shirur, Wagholi, Shikrapur, Ranjangaon &amp; nearby areas.</p>
+
+          <div class="rental-uses">
+            <div class="use reveal"><div class="ui"><i class="fa-solid fa-person-digging"></i></div><span>Earthwork &amp;<br />Excavation</span></div>
+            <div class="use reveal"><div class="ui"><i class="fa-solid fa-tractor"></i></div><span>Land<br />Leveling</span></div>
+            <div class="use reveal"><div class="ui"><i class="fa-solid fa-trowel"></i></div><span>Trenching<br />Work</span></div>
+            <div class="use reveal"><div class="ui"><i class="fa-solid fa-city"></i></div><span>Site<br />Development</span></div>
+          </div>
+        </div>
+        <div class="rental-hero-img reveal" style="--img:url('https://images.unsplash.com/photo-1517089596392-fb9a9033e05b?auto=format&fit=crop&w=1200&q=80')">
+          <div class="script-tag">Your Growth<br />Our Priority</div>
+        </div>
+      </div>
+
+      <!-- Star machines: JCB & Poclain -->
+      <div class="section-head center">
+        <span class="section-tag reveal">Our Star Machines</span>
+        <h2 class="section-title reveal">JCB or Poclain? <span class="hl">We Have Both.</span></h2>
+        <p class="section-sub reveal">Two workhorses for every kind of site. Not sure which one you need? Call us and we'll suggest the right machine for your work.</p>
+      </div>
+
+      <div class="duo">
+        <article class="duo-card reveal">
+          <div class="duo-img" style="--img:url('images/jcb-ananta.jpg')">
+            <span class="duo-type">Backhoe Loader</span>
+            <span class="duo-name"><span class="jcb-badge">JCB</span> 3DX</span>
+          </div>
+          <div class="duo-body">
+            <p class="duo-lead">Digs at the back, loads at the front. Fast on wheels, so it moves between sites quickly.</p>
+            <div class="duo-specs">
+              <div><strong>76 HP</strong><span>Engine</span></div>
+              <div><strong>4.7 m</strong><span>Dig depth</span></div>
+              <div><strong>Wheels</strong><span>Road-mobile</span></div>
+            </div>
+            <h4>Best for</h4>
+            <div class="duo-tags">
+              <span>Earthwork</span><span>Land Leveling</span><span>Trenching</span><span>Loading Tippers</span><span>Plot Cleaning</span><span>Pipeline Work</span>
+            </div>
+            <div class="duo-foot">
+              <div class="duo-price"><small>from</small> ₹1,100<span>/hr</span></div>
+              <button class="btn btn-primary book-btn" data-machine="JCB 3DX Backhoe Loader">Book JCB <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </article>
+
+        <div class="duo-vs reveal">VS</div>
+
+        <article class="duo-card reveal">
+          <div class="duo-img" style="--img:url('https://images.unsplash.com/photo-1580901368919-7738efb0f87e?auto=format&fit=crop&w=1000&q=80')">
+            <span class="duo-type">Crawler Excavator</span>
+            <span class="duo-name"><span class="jcb-badge poc">POCLAIN</span></span>
+          </div>
+          <div class="duo-body">
+            <p class="duo-lead">Heavy-duty digging power on tracks. Goes deeper and handles hard soil and rock.</p>
+            <div class="duo-specs">
+              <div><strong>14–20 T</strong><span>Class</span></div>
+              <div><strong>6.5 m</strong><span>Dig depth</span></div>
+              <div><strong>Breaker</strong><span>Available</span></div>
+            </div>
+            <h4>Best for</h4>
+            <div class="duo-tags">
+              <span>Deep Excavation</span><span>Foundations</span><span>Farm Ponds (Shet Tale)</span><span>Wells</span><span>Nala / Canal Work</span><span>Rock Breaking</span>
+            </div>
+            <div class="duo-foot">
+              <div class="duo-price"><small>from</small> ₹1,800<span>/hr</span></div>
+              <button class="btn btn-primary book-btn" data-machine="Poclain Excavator">Book Poclain <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="section-head center fleet-head">
+        <span class="section-tag reveal">Complete Fleet</span>
+        <h2 class="section-title reveal">Choose the Right Machine</h2>
+        <div class="fleet-toggle reveal" id="rateToggle">
+          <button class="active" data-mode="hour">Per Hour</button>
+          <button data-mode="day">Per Day</button>
+          <span class="slider"></span>
+        </div>
+      </div>
+
+      <div class="fleet-grid">
+        <div class="fleet-card reveal" data-machine="JCB 3DX Backhoe Loader">
+          <span class="badge-pop">Most Booked</span>
+          <div class="fc-icon"><i class="fa-solid fa-truck-monster"></i></div>
+          <h3>JCB 3DX Backhoe</h3>
+          <p>All-rounder for digging, loading &amp; leveling.</p>
+          <div class="price"><span class="from">from</span> ₹<span class="amt" data-hour="1,100" data-day="8,500">1,100</span><span class="per">/hr</span></div>
+          <ul><li><i class="fa-solid fa-gauge"></i> 76 HP</li><li><i class="fa-solid fa-user-gear"></i> With operator</li></ul>
+          <button class="btn btn-primary book-btn">Book Now</button>
+        </div>
+
+        <div class="fleet-card reveal" data-machine="Poclain Excavator">
+          <span class="badge-pop">Heavy Duty</span>
+          <div class="fc-icon"><i class="fa-solid fa-person-digging"></i></div>
+          <h3>Poclain Excavator</h3>
+          <p>Heavy excavation, foundations &amp; quarry work.</p>
+          <div class="price"><span class="from">from</span> ₹<span class="amt" data-hour="1,800" data-day="14,000">1,800</span><span class="per">/hr</span></div>
+          <ul><li><i class="fa-solid fa-weight-hanging"></i> 14–20 Ton</li><li><i class="fa-solid fa-user-gear"></i> With operator</li></ul>
+          <button class="btn btn-primary book-btn">Book Now</button>
+        </div>
+
+        <div class="fleet-card reveal" data-machine="Tipper / Dumper">
+          <div class="fc-icon"><i class="fa-solid fa-truck"></i></div>
+          <h3>Tipper / Dumper</h3>
+          <p>Transport of soil, murum, aggregate &amp; debris.</p>
+          <div class="price"><span class="from">from</span> ₹<span class="amt" data-hour="900" data-day="6,500">900</span><span class="per">/hr</span></div>
+          <ul><li><i class="fa-solid fa-box"></i> 10–16 m³</li><li><i class="fa-solid fa-user-gear"></i> With driver</li></ul>
+          <button class="btn btn-primary book-btn">Book Now</button>
+        </div>
+
+        <div class="fleet-card reveal" data-machine="Road Roller">
+          <div class="fc-icon"><i class="fa-solid fa-road"></i></div>
+          <h3>Road Roller</h3>
+          <p>Compaction for roads, plots &amp; foundations.</p>
+          <div class="price"><span class="from">from</span> ₹<span class="amt" data-hour="1,000" data-day="7,500">1,000</span><span class="per">/hr</span></div>
+          <ul><li><i class="fa-solid fa-weight-hanging"></i> 10 Ton</li><li><i class="fa-solid fa-user-gear"></i> With operator</li></ul>
+          <button class="btn btn-primary book-btn">Book Now</button>
+        </div>
+
+        <div class="fleet-card reveal" data-machine="Tractor & Trolley">
+          <div class="fc-icon"><i class="fa-solid fa-tractor"></i></div>
+          <h3>Tractor &amp; Trolley</h3>
+          <p>Light hauling &amp; farm land development.</p>
+          <div class="price"><span class="from">from</span> ₹<span class="amt" data-hour="600" data-day="4,000">600</span><span class="per">/hr</span></div>
+          <ul><li><i class="fa-solid fa-gauge"></i> 50 HP</li><li><i class="fa-solid fa-user-gear"></i> With driver</li></ul>
+          <button class="btn btn-primary book-btn">Book Now</button>
+        </div>
+
+        <div class="fleet-card reveal" data-machine="Water Tanker">
+          <div class="fc-icon"><i class="fa-solid fa-droplet"></i></div>
+          <h3>Water Tanker</h3>
+          <p>Curing, dust control &amp; site water supply.</p>
+          <div class="price"><span class="from">from</span> ₹<span class="amt" data-hour="700" data-day="3,500">700</span><span class="per">/trip</span></div>
+          <ul><li><i class="fa-solid fa-fill-drip"></i> 10,000 L</li><li><i class="fa-solid fa-user-gear"></i> With driver</li></ul>
+          <button class="btn btn-primary book-btn">Book Now</button>
+        </div>
+      </div>
+      <p class="fleet-note reveal"><i class="fa-solid fa-circle-info"></i> Rates are indicative and vary with site location, duration and fuel. Call for the best quote.</p>
+
+      <!-- Booking Form -->
+      <div class="booking reveal" id="rental-form">
+        <div class="booking-info">
+          <h3>Book a Machine in <span class="hl">60 Seconds</span></h3>
+          <p>Fill in the details and your request is sent straight to our WhatsApp. We'll confirm availability within minutes.</p>
+          <ul>
+            <li><i class="fa-solid fa-bolt"></i> Same-day mobilisation*</li>
+            <li><i class="fa-solid fa-shield-halved"></i> Well-maintained machines</li>
+            <li><i class="fa-solid fa-indian-rupee-sign"></i> Transparent pricing</li>
+          </ul>
+          <a href="tel:+919112984379" class="booking-call"><i class="fa-solid fa-phone-volume"></i> 91129 84379</a>
+        </div>
+        <form class="booking-form" id="bookingForm">
+          <div class="field">
+            <label for="bName">Your Name</label>
+            <input id="bName" type="text" placeholder="e.g. Rahul Patil" required />
+          </div>
+          <div class="field">
+            <label for="bPhone">Mobile Number</label>
+            <input id="bPhone" type="tel" placeholder="10-digit number" pattern="[0-9]{10}" required />
+          </div>
+          <div class="field">
+            <label for="bMachine">Machine Required</label>
+            <select id="bMachine" required>
+              <option>JCB 3DX Backhoe Loader</option>
+              <option>Poclain Excavator</option>
+              <option>Tipper / Dumper</option>
+              <option>Road Roller</option>
+              <option>Tractor &amp; Trolley</option>
+              <option>Water Tanker</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="bDate">Required From</label>
+            <input id="bDate" type="date" required />
+          </div>
+          <div class="field">
+            <label for="bDuration">Duration</label>
+            <select id="bDuration">
+              <option>A few hours</option>
+              <option>1 Day</option>
+              <option>2–7 Days</option>
+              <option>Monthly</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="bLocation">Site Location</label>
+            <input id="bLocation" type="text" placeholder="Village / Area" required />
+          </div>
+          <button type="submit" class="btn btn-primary btn-lg full"><i class="fa-brands fa-whatsapp"></i> Send Booking Request</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJECTS ========== -->
+  <section class="section projects" id="projects">
+    <div class="container">
+      <div class="section-head split">
+        <div>
+          <span class="section-tag reveal">Our Portfolio</span>
+          <h2 class="section-title reveal">Projects That Speak <br />For Themselves</h2>
+        </div>
+        <div class="filters reveal" id="filters">
+          <button class="active" data-filter="all">All</button>
+          <button data-filter="roads">Roads</button>
+          <button data-filter="industrial">Industrial</button>
+          <button data-filter="buildings">Buildings</button>
+        </div>
+      </div>
+
+      <div class="projects-grid" id="projectsGrid">
+        <div class="project tall" data-cat="industrial" style="--img:url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=900&q=80')">
+          <div class="p-info"><span>Industrial</span><h4>Warehouse Complex, Shikrapur MIDC</h4><p><i class="fa-solid fa-location-dot"></i> Shikrapur · 45,000 sq.ft</p></div>
+        </div>
+        <div class="project" data-cat="roads" style="--img:url('https://images.unsplash.com/photo-1503708928676-1cb796a0891e?auto=format&fit=crop&w=900&q=80')">
+          <div class="p-info"><span>Roads</span><h4>CC Road, Koregaon Bhima – Sanaswadi</h4><p><i class="fa-solid fa-location-dot"></i> 6.5 km · Concrete</p></div>
+        </div>
+        <div class="project" data-cat="buildings" style="--img:url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=80')">
+          <div class="p-info"><span>Buildings</span><h4>Ananta Residency – G+4</h4><p><i class="fa-solid fa-location-dot"></i> Wagholi · 32 Flats</p></div>
+        </div>
+        <div class="project wide" data-cat="industrial" style="--img:url('https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1200&q=80')">
+          <div class="p-info"><span>Industrial</span><h4>PEB Factory Shed, Ranjangaon</h4><p><i class="fa-solid fa-location-dot"></i> Ranjangaon MIDC · 60,000 sq.ft</p></div>
+        </div>
+        <div class="project" data-cat="buildings" style="--img:url('https://images.unsplash.com/photo-1508450859948-4e04fabaa4ea?auto=format&fit=crop&w=900&q=80')">
+          <div class="p-info"><span>Buildings</span><h4>Commercial Plaza, Lonikand</h4><p><i class="fa-solid fa-location-dot"></i> Lonikand · 24 Shops</p></div>
+        </div>
+        <div class="project" data-cat="roads" style="--img:url('https://images.unsplash.com/photo-1470723710355-95304d8aece4?auto=format&fit=crop&w=900&q=80')">
+          <div class="p-info"><span>Roads</span><h4>State Highway Widening, Shirur Taluka</h4><p><i class="fa-solid fa-location-dot"></i> 11 km · Bituminous &amp; Lighting</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROCESS ========== -->
+  <section class="section process">
+    <div class="container">
+      <div class="section-head center">
+        <span class="section-tag reveal">How We Work</span>
+        <h2 class="section-title reveal">From Idea to Handover in 4 Steps</h2>
+      </div>
+      <div class="process-grid">
+        <div class="step reveal"><div class="step-num">01</div><i class="fa-solid fa-comments"></i><h4>Consultation</h4><p>Site visit, understanding your requirement &amp; budget.</p></div>
+        <div class="step reveal"><div class="step-num">02</div><i class="fa-solid fa-compass-drafting"></i><h4>Planning &amp; Estimate</h4><p>Drawings, BOQ and transparent cost estimate.</p></div>
+        <div class="step reveal"><div class="step-num">03</div><i class="fa-solid fa-helmet-safety"></i><h4>Execution</h4><p>Own machinery &amp; skilled team, with regular progress updates.</p></div>
+        <div class="step reveal"><div class="step-num">04</div><i class="fa-solid fa-key"></i><h4>Quality Handover</h4><p>Final inspection and on-time handover with support.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TESTIMONIALS ========== -->
+  <section class="section testimonials">
+    <div class="container">
+      <div class="section-head center">
+        <span class="section-tag light reveal">Testimonials</span>
+        <h2 class="section-title light reveal">What Our Clients Say</h2>
+      </div>
+      <div class="t-slider reveal">
+        <div class="t-track" id="tTrack">
+          <div class="t-card">
+            <i class="fa-solid fa-quote-left"></i>
+            <p>Ananta completed our 60,000 sq.ft factory shed two weeks ahead of schedule. Their own JCB fleet made the earthwork incredibly fast.</p>
+            <div class="t-author"><span class="t-av">RK</span><div><strong>Rajesh Kulkarni</strong><small>Plant Head, Ranjangaon MIDC</small></div></div>
+          </div>
+          <div class="t-card">
+            <i class="fa-solid fa-quote-left"></i>
+            <p>We hired their Poclain for our farm pond and a JCB for plot leveling. Skilled operators, and the machines reached the site within 2 hours of calling. Highly recommended!</p>
+            <div class="t-author"><span class="t-av">SP</span><div><strong>Sachin Pawar</strong><small>Farmer &amp; Land Owner, Shirur</small></div></div>
+          </div>
+          <div class="t-card">
+            <i class="fa-solid fa-quote-left"></i>
+            <p>The CC road quality in our village is excellent. Transparent work, good material and the team kept the Gram Panchayat updated at every stage.</p>
+            <div class="t-author"><span class="t-av">AM</span><div><strong>Anil More</strong><small>Sarpanch, Gram Panchayat</small></div></div>
+          </div>
+        </div>
+      </div>
+      <div class="t-nav">
+        <button id="tPrev" aria-label="Previous"><i class="fa-solid fa-arrow-left"></i></button>
+        <div class="t-dots" id="tDots"></div>
+        <button id="tNext" aria-label="Next"><i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CTA ========== -->
+  <section class="cta">
+    <div class="container cta-inner reveal">
+      <div>
+        <h2>Have a project in mind?</h2>
+        <p>Let's build it together. Get a free site visit &amp; estimate today.</p>
+      </div>
+      <div class="cta-btns">
+        <a href="tel:+919112984379" class="btn btn-dark btn-lg"><i class="fa-solid fa-phone"></i> Call Now</a>
+        <a href="https://wa.me/919112984379" target="_blank" rel="noopener" class="btn btn-white btn-lg"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section class="section contact" id="contact">
+    <div class="container contact-grid">
+      <div class="contact-info">
+        <span class="section-tag reveal">Contact Us</span>
+        <h2 class="section-title reveal">Let's Start <span class="hl">Building</span></h2>
+        <p class="reveal">Visit our office, call us, or send an enquiry. We usually respond within an hour.</p>
+
+        <div class="ci-list">
+          <a href="tel:+919112984379" class="ci reveal"><i class="fa-solid fa-phone"></i><div><small>Call Us</small><strong>+91 91129 84379</strong></div></a>
+          <a href="https://wa.me/919112984379" target="_blank" rel="noopener" class="ci reveal"><i class="fa-brands fa-whatsapp"></i><div><small>WhatsApp</small><strong>Chat with us instantly</strong></div></a>
+          <div class="ci reveal"><i class="fa-solid fa-location-dot"></i><div><small>Office</small><strong>Koregaon Bhima, Tal. Shirur, Pune – 412216</strong></div></div>
+          <div class="ci reveal"><i class="fa-regular fa-clock"></i><div><small>Working Hours</small><strong>Mon – Sat, 8:00 AM – 8:00 PM</strong></div></div>
+        </div>
+
+        <div class="map reveal">
+          <iframe title="Office location" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            src="https://maps.google.com/maps?q=Koregaon%20Bhima%2C%20Pune&z=13&output=embed"></iframe>
+        </div>
+      </div>
+
+      <form class="contact-form reveal" id="contactForm">
+        <h3>Request a Free Quote</h3>
+        <div class="row">
+          <div class="field"><label for="cName">Full Name</label><input id="cName" type="text" placeholder="Your name" required /></div>
+          <div class="field"><label for="cPhone">Phone</label><input id="cPhone" type="tel" placeholder="10-digit mobile" pattern="[0-9]{10}" required /></div>
+        </div>
+        <div class="field"><label for="cEmail">Email (optional)</label><input id="cEmail" type="email" placeholder="you@example.com" /></div>
+        <div class="field">
+          <label>Service Required</label>
+          <div class="chips" id="serviceChips">
+            <button type="button" class="chip active">Road Construction</button>
+            <button type="button" class="chip">Industrial</button>
+            <button type="button" class="chip">Building</button>
+            <button type="button" class="chip">Machinery Rental</button>
+          </div>
+        </div>
+        <div class="field"><label for="cMsg">Project Details</label><textarea id="cMsg" rows="4" placeholder="Tell us about your project, location, size, timeline…"></textarea></div>
+        <button type="submit" class="btn btn-primary btn-lg full">Send Enquiry <i class="fa-solid fa-paper-plane"></i></button>
+        <div class="form-success" id="formSuccess"><i class="fa-solid fa-circle-check"></i> Thank you! Our team will contact you shortly.</div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="hazard-stripes footer-stripes"></div>
+    <div class="container footer-grid">
+      <div class="f-brand">
+        <a href="#home" class="brand">
+          <svg class="logo-mark" viewBox="0 0 640 580" role="img" aria-label="Ananta logo"><use href="#ananta-mark"/></svg>
+          <div class="brand-text"><strong aria-label="Ananta">AN<svg class="a-peak" viewBox="0 0 86 100" aria-hidden="true"><path d="M0 100 28 0H58L86 100H59L43 42 27 100Z" fill="currentColor"/><path d="M43 64 31 100H43Z" fill="#FFD54F"/><path d="M43 64V100H55Z" fill="#E09B00"/></svg><span class="sr-only">A</span>NTA</strong><small>Constructions &amp; Developers</small></div>
+        </a>
+        <div class="f-tagline"><span>Building Today</span><i></i><span>For a Better Tomorrow</span></div>
+        <p>Roads, industries, buildings &amp; machinery rental across Pune district.</p>
+        <div class="f-social">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://wa.me/919112984379" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul><li><a href="#about">About Us</a></li><li><a href="#services">Services</a></li><li><a href="#projects">Projects</a></li><li><a href="#contact">Contact</a></li></ul>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul><li><a href="#services">Road Construction</a></li><li><a href="#services">Industrial Projects</a></li><li><a href="#services">Buildings</a></li><li><a href="#rental">JCB &amp; Poclain On Rent</a></li></ul>
+      </div>
+      <div>
+        <h4>Get in Touch</h4>
+        <ul class="f-contact">
+          <li><i class="fa-solid fa-phone"></i> +91 91129 84379</li>
+          <li><i class="fa-solid fa-location-dot"></i> Koregaon Bhima, Pune</li>
+          <li><i class="fa-regular fa-clock"></i> Mon – Sat, 8 AM – 8 PM</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container f-bottom">
+      <span>© <span id="year"></span> Ananta Constructions &amp; Developers. All rights reserved.</span>
+      <span class="script">Your Growth, Our Priority</span>
+    </div>
+  </footer>
+
+  <!-- Floating actions -->
+  <div class="floating">
+    <a href="https://wa.me/919112984379" target="_blank" rel="noopener" class="fab wa" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+    <a href="tel:+919112984379" class="fab call" aria-label="Call"><i class="fa-solid fa-phone"></i></a>
+  </div>
+  <button class="to-top" id="toTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
